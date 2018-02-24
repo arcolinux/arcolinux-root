@@ -1,5 +1,5 @@
 ! ------------------------------------------------------------------------------
-! xterm standard ArchMerge theme
+! xterm standard arcolinux theme
 ! ------------------------------------------------------------------------------
 ! https://critical.ch/xterm/
 ! ------------------------------------------------------------------------------
@@ -35,7 +35,7 @@ xterm*boldMode: false
 
 
 ! ------------------------------------------------------------------------------
-! URxvt standard ArchMerge theme
+! URxvt standard arcolinux theme
 ! ------------------------------------------------------------------------------
 
 
@@ -123,7 +123,7 @@ URxvt*buffered:         false
 
 
 ! ------------------------------------------------------------------------------
-! UXTerm standard ArchMerge theme
+! UXTerm standard arcolinux theme
 ! ------------------------------------------------------------------------------
 
 
@@ -170,6 +170,3 @@ UXTerm*color15: rgb:fc/fc/fc
 UXTerm*boldMode: false
 UXTerm*colorBDMode: true
 UXTerm*colorBD: rgb:3f/3f/3f
-
-                                                         
-                                                           

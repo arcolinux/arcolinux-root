@@ -1,6 +1,6 @@
 --[[
 #=====================================================================================
-#                               ArchMerge
+#                               arcolinux
 # Date    : 16/09/2017
 # Author  : Erik Dubois at http://www.erikdubois.be
 # Version : v1.2.0
@@ -16,17 +16,17 @@ conky.config = {
 	--Various settings
 
 	background = true, 							-- forked to background
-	cpu_avg_samples = 2,						-- The number of samples to average for CPU monitoring. 
-	diskio_avg_samples = 10,					-- The number of samples to average for disk I/O monitoring. 
-	double_buffer = true,						-- Use the Xdbe extension? (eliminates flicker) 
+	cpu_avg_samples = 2,						-- The number of samples to average for CPU monitoring.
+	diskio_avg_samples = 10,					-- The number of samples to average for disk I/O monitoring.
+	double_buffer = true,						-- Use the Xdbe extension? (eliminates flicker)
 	if_up_strictness = 'address',				-- how strict if testing interface is up - up, link or address
-	net_avg_samples = 2,						-- The number of samples to average for net data 
-	no_buffers = true,							-- Subtract (file system) buffers from used memory? 
+	net_avg_samples = 2,						-- The number of samples to average for net data
+	no_buffers = true,							-- Subtract (file system) buffers from used memory?
 	temperature_unit = 'celsius',				-- fahrenheit or celsius
 	text_buffer_size = 2048,					-- size of buffer for display of content of large variables - default 256
 	update_interval = 1,						-- update interval
 	imlib_cache_size = 0,                       -- disable image cache to get a new spotify cover per song
-	
+
 
 	--Placement
 
@@ -45,7 +45,7 @@ conky.config = {
 	border_inner_margin = 5, 					-- margin between border and text
 	border_outer_margin = 5, 					-- margin between border and edge of window
 	border_width = 0, 							-- border width in pixels
-	default_bar_width = 280,					-- default is 0 - full width					
+	default_bar_width = 280,					-- default is 0 - full width
 	default_bar_height = 10,					-- default is 6
 	default_gauge_height = 25,					-- default is 25
 	default_gauge_width =40,					-- default is 40
@@ -60,7 +60,7 @@ conky.config = {
 	stippled_borders = 0,						-- dashing the border
 
 	--Textual
-	
+
 	extra_newline = false,						-- extra newline at the end - for asesome's wiboxes
 	format_human_readable = true,				-- KiB, MiB rather then number of bytes
 	font = 'Noto Mono:size=11:regular',  			-- font for complete conky unless in code defined
@@ -86,23 +86,23 @@ conky.config = {
 	own_window_transparent = false,				-- if own_window_argb_visual is true sets background opacity 0%
 	own_window_title = 'system_conky',			-- set the name manually  - default conky "hostname"
 	own_window_type = 'desktop',				    -- if own_window true options are: normal/override/dock/desktop/panel
-	
+
 
 	--Colours
 
 	default_color = '#ff0000',  				-- default color and border color
-	color1 = '#FFFFFF', 
-	color2 = '#FFA726', 
-	color3 = '#cccccc', 
+	color1 = '#FFFFFF',
+	color2 = '#FFA726',
+	color3 = '#cccccc',
 	color4 = '#BDBDBD',
-	color5 = '#CCCCCC', 
+	color5 = '#CCCCCC',
 	color6 = '#aa0000',
 
 	--Signal Colours
 	color7 = '#1F7411',  						--green
 	color8 = '#FFA726',  						--orange
 	color9 = '#F1544B',  						--firebrick
-	
+
 
 	--Lua
 
