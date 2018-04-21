@@ -48,8 +48,8 @@ URxvt*iconFile:  		/usr/share/icons/Sardi-Mono/scalable/apps/terminal.svg
 
 ! appearance
 URxvt*depth:            32
-urxvt*transparent: 		true
-urxvt*shading: 			35
+!urxvt*transparent: 		true
+!urxvt*shading: 			35
 !URxvt*background:      rgba:0000/0000/0000/AAAA
 !URxvt*background:      [80]#404552
 URxvt*background:       [80]#3F424A
