@@ -35,7 +35,7 @@ xterm*boldMode: false
 
 
 ! ------------------------------------------------------------------------------
-! URxvt standard arcolinux theme
+! URxvt standard arcolinux theme - Reload with xrdb ~/.Xresources
 ! ------------------------------------------------------------------------------
 
 
@@ -48,6 +48,8 @@ URxvt*iconFile:  		/usr/share/icons/Sardi-Mono/scalable/apps/terminal.svg
 
 ! appearance
 URxvt*depth:            32
+urxvt*transparent: 		true
+urxvt*shading: 			35
 !URxvt*background:      rgba:0000/0000/0000/AAAA
 !URxvt*background:      [80]#404552
 URxvt*background:       [80]#3F424A
@@ -118,6 +120,8 @@ URxvt.tabbed.tabbar-bg: 16
 URxvt.tabbed.tab-fg:    15
 URxvt.tabbed.tab-bg:    4
 URxvt*buffered:         false
+URxvt.keysym.Control-Shift-C: perl:clipboard:copy
+URxvt.keysym.Control-Shift-V: perl:clipboard:paste
 
 
 
