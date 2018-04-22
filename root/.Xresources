@@ -64,6 +64,9 @@ URxvt*highlightColor:   #4682B4
 URxvt*throughColor:     Blue
 URxvt*cursorColor:      #c5c8c6
 URxvt*scrollBar:        false
+URxvt*scrollTtyOutput:  false
+URxvt*scrollWithBuffer:  true
+URxvt*scrollTtyKeypress: true
 URxvt*internalBorder:   0
 URxvt*externalBorder:   0
 URxvt*colorIT:      	#87af5f
