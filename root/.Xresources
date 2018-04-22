@@ -102,7 +102,7 @@ URxvt*boldItalicFont:     		xft:Monospace:regular:size=13
 ! run :.!fc-list | grep <font-name>
 
 ! perl extensions
-URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select
+URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,resize-font
 !URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,tabbed
 
 ! macros for clipboard and selection
@@ -114,6 +114,8 @@ URxvt*keysym.M-C-v:     perl:clipboard:paste_escaped
 URxvt*keysym.M-Escape:  perl:keyboard-select:activate
 URxvt*keysym.M-s:       perl:keyboard-select:search
 URxvt*keysym.M-u:       perl:url-select:select_next
+URxvt*resize-font.smaller:	C-Down
+URxvt*resize-font.bigger:	C-Up
 URxvt*urlLauncher:      firefox
 URxvt*underlineURLs:    true
 URxvt*urlButton:        1
