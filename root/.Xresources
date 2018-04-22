@@ -57,7 +57,7 @@ URxvt*depth:            32
 !URxvt*shading:          true
 !URxvt*background:      rgba:0000/0000/0000/AAAA
 !URxvt*background:      [80]#404552
-URxvt*background:       [80]#3F424A
+URxvt*background:       [70]#3F424A
 URxvt*foreground:       #F8F8FF
 URxvt*underlineColor:   #4682B4
 URxvt*highlightColor:   #4682B4
