@@ -35,7 +35,7 @@ xterm*boldMode: false
 
 
 ! ------------------------------------------------------------------------------
-! URxvt standard arcolinux theme - Reload with xrdb ~/.Xresources
+! URxvt standard arcolinux theme - Reload with xrdb -merge ~/.Xresources
 ! ------------------------------------------------------------------------------
 
 
@@ -43,13 +43,18 @@ xterm*boldMode: false
 ! general settings
 URxvt*saveline:         15000
 URxvt*termName:         rxvt-256color
+URxvt.urgentOnBell:     false
+URxvt.visualBell:       false
 URxvt*iso14755:         false
+URxvt.iso14755_52:      false
+URxvt.meta8:            false
+URxvt.metaSendsEscape:  true
 URxvt*iconFile:  		/usr/share/icons/Sardi-Mono/scalable/apps/terminal.svg
 
 ! appearance
 URxvt*depth:            32
-!urxvt*transparent: 		true
-!urxvt*shading: 			35
+!URxvt*transparent:      true
+!URxvt*shading:          true
 !URxvt*background:      rgba:0000/0000/0000/AAAA
 !URxvt*background:      [80]#404552
 URxvt*background:       [80]#3F424A
@@ -58,9 +63,7 @@ URxvt.underlineColor:   #4682B4
 URxvt.highlightColor:   #4682B4
 URxvt.throughColor:     Blue
 URxvt*cursorColor:      #c5c8c6
-URxvt*cursorColor2:     Black
 URxvt*scrollBar:        false
-URxvt*scrollBar_right:  false
 URxvt*internalBorder:   0
 URxvt*externalBorder:   0
 URxvt.colorIT:      	#87af5f
@@ -88,7 +91,6 @@ URxvt*color15: #ffffff
 
 ! fonts
 URxvt*letterSpace: 	    		-2
-!Xft.size:						12
 URxvt*font:                 	xft:Monospace:regular:size=13
 URxvt*imFont:               	xft:Monospace:regular:size=13
 URxvt*boldFont:             	xft:Monospace:bold:size=13
