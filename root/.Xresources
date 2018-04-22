@@ -43,12 +43,12 @@ xterm*boldMode: false
 ! general settings
 URxvt*saveline:         15000
 URxvt*termName:         rxvt-256color
-URxvt.urgentOnBell:     false
-URxvt.visualBell:       false
+URxvt*urgentOnBell:     false
+URxvt*visualBell:       false
 URxvt*iso14755:         false
-URxvt.iso14755_52:      false
-URxvt.meta8:            false
-URxvt.metaSendsEscape:  true
+URxvt*iso14755_52:      false
+URxvt*meta8:            false
+URxvt*metaSendsEscape:  true
 URxvt*iconFile:  		/usr/share/icons/Sardi-Mono/scalable/apps/terminal.svg
 
 ! appearance
@@ -59,16 +59,16 @@ URxvt*depth:            32
 !URxvt*background:      [80]#404552
 URxvt*background:       [80]#3F424A
 URxvt*foreground:       #F8F8FF
-URxvt.underlineColor:   #4682B4
-URxvt.highlightColor:   #4682B4
-URxvt.throughColor:     Blue
+URxvt*underlineColor:   #4682B4
+URxvt*highlightColor:   #4682B4
+URxvt*throughColor:     Blue
 URxvt*cursorColor:      #c5c8c6
 URxvt*scrollBar:        false
 URxvt*internalBorder:   0
 URxvt*externalBorder:   0
-URxvt.colorIT:      	#87af5f
-URxvt.colorBD:      	#c5c8c6
-URxvt.colorUL:      	#87afd7
+URxvt*colorIT:      	#87af5f
+URxvt*colorBD:      	#c5c8c6
+URxvt*colorUL:      	#87afd7
 
 
 ! colors
@@ -99,31 +99,32 @@ URxvt*boldItalicFont:     		xft:Monospace:regular:size=13
 ! run :.!fc-list | grep <font-name>
 
 ! perl extensions
-URxvt.perl-ext-common:  default,clipboard,url-select,keyboard-select
-!URxvt.perl-ext-common:  default,clipboard,url-select,keyboard-select,tabbed
+URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select
+!URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,tabbed
 
 ! macros for clipboard and selection
-URxvt.copyCommand:      xclip -i -selection clipboard
-URxvt.pasteCommand:     xclip -o -selection clipboard
-URxvt.keysym.M-c:       perl:clipboard:copy
-URxvt.keysym.m-v:       perl:clipboard:paste
-URxvt.keysym.M-C-v:     perl:clipboard:paste_escaped
-URxvt.keysym.M-Escape:  perl:keyboard-select:activate
-URxvt.keysym.M-s:       perl:keyboard-select:search
-URxvt.keysym.M-u:       perl:url-select:select_next
-URxvt.urlLauncher:      firefox
-URxvt.underlineURLs:    true
-URxvt.urlButton:        1
-URxvt.geometry: 		90x30
+URxvt*copyCommand:      xclip -i -selection clipboard
+URxvt*pasteCommand:     xclip -o -selection clipboard
+URxvt*keysym.M-c:       perl:clipboard:copy
+URxvt*keysym.m-v:       perl:clipboard:paste
+URxvt*keysym.M-C-v:     perl:clipboard:paste_escaped
+URxvt*keysym.M-Escape:  perl:keyboard-select:activate
+URxvt*keysym.M-s:       perl:keyboard-select:search
+URxvt*keysym.M-u:       perl:url-select:select_next
+URxvt*urlLauncher:      firefox
+URxvt*underlineURLs:    true
+URxvt*urlButton:        1
+URxvt*geometry: 		90x30
 
 ! tabbed
-URxvt.tabbed.tabbar-fg: 4
-URxvt.tabbed.tabbar-bg: 16
-URxvt.tabbed.tab-fg:    15
-URxvt.tabbed.tab-bg:    4
+URxvt*tabbed.tabbar-fg: 4
+URxvt*tabbed.tabbar-bg: 16
+URxvt*tabbed.tab-fg:    15
+URxvt*tabbed.tab-bg:    4
 URxvt*buffered:         false
-URxvt.keysym.Control-Shift-C: perl:clipboard:copy
-URxvt.keysym.Control-Shift-V: perl:clipboard:paste
+URxvt*keysym.Control-Shift-C: perl:clipboard:copy
+URxvt*keysym.Control-Shift-V: perl:clipboard:paste
+
 
 
 
