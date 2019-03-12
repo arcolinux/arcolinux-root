@@ -126,7 +126,7 @@ alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 
 #fixes
-alias lightm-fix="sudo libtool --finish /usr/lib"
+alias lightdm-fix="sudo libtool --finish /usr/lib"
 
 #Recent Installed Packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -100"
