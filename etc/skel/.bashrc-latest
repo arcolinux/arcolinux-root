@@ -79,7 +79,7 @@ alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias fixpng="find . -type f -name "*.png" -exec convert {} -strip {} \;"
 
 #add new fonts
-alias fc='sudo fc-cache -fv'
+alias update-fc='sudo fc-cache -fv'
 
 #copy/paste all content of /etc/skel over to home folder - Beware
 alias skel='cp -rf /etc/skel/* ~'
