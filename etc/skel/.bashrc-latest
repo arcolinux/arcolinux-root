@@ -159,7 +159,7 @@ alias nconfgrub="sudo nano /boot/grub/grub.cfg"
 #verify signature for isos
 alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
 #receive the key of a developer
-alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --reveive-keys"
+alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
 #shutdown or reboot
 alias ssn="sudo shutdown now"
