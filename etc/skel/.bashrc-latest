@@ -73,7 +73,7 @@ alias pksyua="yay -Syu --noconfirm"
 alias upall="yay -Syu --noconfirm"
 
 #ps
-alias ps="ps auxf"
+alias psa="ps auxf"
 alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
 
 #grub update
