@@ -79,9 +79,6 @@ alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
 #grub update
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
-#improve png
-alias fixpng="find . -type f -name "*.png" -exec convert {} -strip {} \;"
-
 #add new fonts
 alias update-fc='sudo fc-cache -fv'
 
