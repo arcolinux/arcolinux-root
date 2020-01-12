@@ -142,14 +142,13 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
 
-
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
-#nano for important configration files 
+#nano for important configration files
 #know what you do in these files
 alias nlightdm="sudo nano /etc/lightdm/lightdm.conf"
 alias npacman="sudo nano /etc/pacman.conf"
