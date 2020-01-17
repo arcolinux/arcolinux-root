@@ -88,7 +88,7 @@ alias skel='cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -
 alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
 
 #copy bashrc-latest over on bashrc - cb= copy bashrc
-alias cb='sudo cp /etc/skel/.bashrc-latest /etc/skel/.bashrc && cp /etc/skel/.bashrc-latest ~/.bashrc && cp /etc/skel/.bashrc-latest ~/.bashrc-latest && source ~/.bashrc'
+alias cb='sudo cp /etc/skel/.bashrc ~/.bashrc && source ~/.bashrc'
 #copy /etc/skel/.zshrc over on ~/.zshrc - cb= copy zshrc
 #alias cz='sudo cp /etc/skel/.zshrc ~/.zshrc && source ~/.zshrc'
 
