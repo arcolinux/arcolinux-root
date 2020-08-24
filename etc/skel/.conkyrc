@@ -143,7 +143,6 @@ ${color1}[S]+e${alignr}${color2}Editor${color}
 ${color1}[S]+m${alignr}${color2}Media Player${color}
 ${color1}[S]+w${alignr}${color2}Web Browser${color}
 ${color1}[S]+h${alignr}${color2}Task Manager${color}
-${color1}[S]+l${alignr}${color2}Lock Screen${color}
 ${color1}[S]+v${alignr}${color2}Volume Control${color}
 ${color1}[PrtSc]${alignr}${color2}Screenshot${color}
 ${color1}[Ctrl]+[Alt]+m${alignr}${color2}Settings${color}
