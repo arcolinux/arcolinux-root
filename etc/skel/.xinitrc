@@ -11,11 +11,11 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-if [ systemd-detect-virt = "oracle"]; then
+if [ systemd-detect-virt = "oracle" ]; then
 	/usr/bin/VBoxClient-all
 fi
 
-if $DESKTOP_SESSION = "cwm"]; then
+if [ $DESKTOP_SESSION = "cwm" ]; then
 	homedir=$(echo $HOME)
 	$homedir/.config/cwm/autostart.sh
 fi
