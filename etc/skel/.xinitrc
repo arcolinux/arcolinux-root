@@ -15,3 +15,7 @@ if [systemd-detect-virt = "oracle"];
 	/usr/bin/VBoxClient-all
 fi
 
+if $DESKTOP_SESSION = "cwm"];
+	homedir=$(echo $HOME)
+	$homedir/.config/cwm/autostart.sh
+fi
