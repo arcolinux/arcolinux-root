@@ -8,5 +8,5 @@
 
 if [ $DESKTOP_SESSION = 'cwm' ]; then
 	homedir=$(echo $HOME)
-	$homedir/.config/cwm/autostart.sh
+	sh $homedir/.config/cwm/autostart.sh
 fi
