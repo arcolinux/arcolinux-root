@@ -42,6 +42,7 @@ alias upate='sudo pacman -Syu'
 alias updte='sudo pacman -Syu'
 alias updqte='sudo pacman -Syu'
 alias upqll="yay -Syu --noconfirm"
+alias upal="yay -Syu --noconfirm"
 
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
