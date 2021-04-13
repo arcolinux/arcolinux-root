@@ -87,6 +87,7 @@ alias update='sudo pacman -Syyu'
 # yay as aur helper - updates everything
 alias pksyua="yay -Syu --noconfirm"
 alias upall="yay -Syu --noconfirm"
+alias paru="paru --skipreview"
 
 #ps
 alias psa="ps auxf"
@@ -170,6 +171,9 @@ alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
 
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+
+#search content with ripgrep
+alias rg="rg --sort path"
 
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
