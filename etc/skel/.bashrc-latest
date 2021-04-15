@@ -190,6 +190,7 @@ alias nfstab="sudo $EDITOR /etc/fstab"
 alias nnsswitch="sudo $EDITOR /etc/nsswitch.conf"
 alias nsamba="sudo $EDITOR /etc/samba/smb.conf"
 alias nb="$EDITOR ~/.bashrc"
+alias nz="$EDITOR ~/.zshrc"
 
 #gpg
 #verify signature for isos
