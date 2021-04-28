@@ -265,3 +265,5 @@ neofetch
 #alsi
 # install arcolinux-bin-git - standard on ArcoLinux isos (or sfetch - smaller)
 #hfetch
+# install lolcat
+# neofetch | lolcat
