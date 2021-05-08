@@ -1,47 +1,11 @@
 ! ------------------------------------------------------------------------------
-! xterm standard arcolinux theme
-! ------------------------------------------------------------------------------
-! https://critical.ch/xterm/
-! ------------------------------------------------------------------------------
-
-xterm*font: 7x13
-xterm*faceName: Monospace:size=12:antialias=false
-xterm*loginShell: true
-xterm*vt100*geometry: 90x34
-xterm*saveLines: 2000
-xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
-xterm*termName: xterm-color
-xterm*eightBitInput: false
-xterm*foreground: rgb:d9/d4/d4
-xterm*background: rgb:32/32/32
-xterm*color0: rgb:00/00/00
-xterm*color1: rgb:a8/00/00
-xterm*color2: rgb:00/a8/00
-xterm*color3: rgb:a8/54/00
-xterm*color4: rgb:5f/81/9d
-xterm*color5: rgb:a8/00/a8
-xterm*color6: rgb:00/a8/a8
-xterm*color7: rgb:70/78/80
-xterm*color8: rgb:54/54/54
-xterm*color9: rgb:fc/54/54
-xterm*color10: rgb:54/fc/54
-xterm*color11: rgb:fc/fc/54
-xterm*color12: rgb:81/a2/be
-xterm*color13: rgb:fc/54/fc
-xterm*color14: rgb:54/fc/fc
-xterm*color15: rgb:c5/c8/c6
-xterm*boldMode: false
-
-
-
-! ------------------------------------------------------------------------------
 ! URxvt standard arcolinux theme - Reload with xrdb -merge ~/.Xresources
+! or alias merge
 ! ------------------------------------------------------------------------------
-
 
 
 ! general settings
-URxvt*saveline:         15000
+URxvt*saveline:         50000
 URxvt*termName:         xterm-256color
 URxvt*urgentOnBell:     false
 URxvt*visualBell:       false
@@ -50,61 +14,75 @@ URxvt*iso14755_52:      false
 URxvt*meta8:            false
 URxvt*metaSendsEscape:  true
 URxvt*iconFile:  		/usr/share/icons/Sardi-Mono/scalable/apps/terminal.svg
+URxvt*urlLauncher:      firefox
+URxvt*underlineURLs:    true
+URxvt*urlButton:        1
 
 ! appearance
+URxvt*geometry: 		100x30
 URxvt*depth:             32
 !URxvt*transparent:      true
-URxvt*shading:          30
-URxvt*background:       rgba:2222/2222/2222/AAAA
+URxvt*shading:           80
+!URxvt*background:       rgba:2222/2222/2222/AAAA
 !URxvt*background:       [80]#404552
 !URxvt*background:       [70]#3F424A
-!URxvt*background:        [80]#282A36
-URxvt*foreground:        #F8F8FF
+URxvt*background:        [80]#222222
+URxvt*foreground:        #F9F9F9
 URxvt*underlineColor:    #4682B4
 URxvt*highlightColor:    #4682B4
-URxvt*throughColor:      Blue
-URxvt*cursorColor:       #c5c8c6
+URxvt*throughColor:      #4682B4
+URxvt*cursorColor:       #c8c8c8
 URxvt*scrollBar:         false
 URxvt*scrollTtyOutput:   false
 URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
 URxvt*internalBorder:    0
 URxvt*externalBorder:    0
-URxvt*colorIT:      	 #87af5f
-URxvt*colorBD:      	 #c5c8c6
+URxvt*colorIT:      	 #4682B4
+URxvt*colorBD:      	 #F9F9F9
 URxvt*colorUL:      	 #87afd7
 
 
 ! colors
 URxvt*color0: #3f3f3f
-URxvt*color1: #ac3c3c
-URxvt*color2: #60b48a
-URxvt*color3: #dfaf8f
-URxvt*color4: #506070
-URxvt*color5: #dc8cc3
-URxvt*color6: #8cd0d3
+URxvt*color1: #cc0000
+URxvt*color2: #4e9a06
+URxvt*color3: #c4a000
+URxvt*color4: #3465a4
+URxvt*color5: #75507b
+URxvt*color6: #06989a
 URxvt*color7: #dcdccc
-URxvt*color8: #79A9FF
-URxvt*color9: #da6e6e
-URxvt*color10: #c3bf9f
-URxvt*color11: #f0dfaf
+URxvt*color8: #545454
+URxvt*color9: #fc5454
+URxvt*color10: #8ae234
+URxvt*color11: #fce94f
 URxvt*color12: #94bff3
-URxvt*color13: #ec93d3
+URxvt*color13: #ad7fa8
 URxvt*color14: #93e0e3
 URxvt*color15: #ffffff
 
 ! fonts
-URxvt*letterSpace: 	    		-2
-URxvt*font:                 	xft:Monospace:regular:size=12
-URxvt*imFont:               	xft:Monospace:regular:size=12
-URxvt*boldFont:             	xft:Monospace:bold:size=12
-URxvt*italicFont:           	xft:Monospace:italic:size=12
-URxvt*boldItalicFont:     		xft:Monospace:regular:size=12
+URxvt*letterSpace: 	    		-1
+URxvt*font:                 	xft:Monospace:regular:size=11
+URxvt*imFont:               	xft:Monospace:regular:size=11
+URxvt*italicFont:           	xft:Monospace:italic:size=11
+URxvt*boldFont:             	xft:Monospace:bold:size=11
+URxvt*boldItalicFont:     		xft:Monospace:regular:size=11
 ! run :.!fc-list | grep <font-name>
 
 ! perl extensions
-URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,resize-font
+! You can install extra perl extensions you should add them here
+URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,fullscreen,resize-font
 !URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,tabbed
+
+! macros for resize-font - sudo pacman -S urxvt-resize-font-git
+URxvt.resize-font.step:   1
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
+URxvt.keysym.C-Down:      resize-font:smaller
+URxvt.keysym.C-Up:        resize-font:bigger
 
 ! macros for clipboard and selection
 URxvt*copyCommand:      xclip -i -selection clipboard
@@ -115,12 +93,9 @@ URxvt*keysym.M-C-v:     perl:clipboard:paste_escaped
 URxvt*keysym.M-Escape:  perl:keyboard-select:activate
 URxvt*keysym.M-s:       perl:keyboard-select:search
 URxvt*keysym.M-u:       perl:url-select:select_next
-URxvt*resize-font.smaller:	C-Down
-URxvt*resize-font.bigger:	C-Up
-URxvt*urlLauncher:      firefox
-URxvt*underlineURLs:    true
-URxvt*urlButton:        1
-URxvt*geometry: 		90x30
+
+! fullscreen - sudo pacman -S urxvt-fullscreen
+urxvt*keysym.F11:       perl:fullscreen:switch
 
 ! tabbed
 URxvt*tabbed.tabbar-fg: 4
@@ -128,9 +103,45 @@ URxvt*tabbed.tabbar-bg: 16
 URxvt*tabbed.tab-fg:    15
 URxvt*tabbed.tab-bg:    4
 URxvt*buffered:         false
+
+! clipboard
 URxvt*keysym.Control-Shift-C: perl:clipboard:copy
 URxvt*keysym.Control-Shift-V: perl:clipboard:paste
 
+
+! ------------------------------------------------------------------------------
+! xterm standard arcolinux theme
+! ------------------------------------------------------------------------------
+
+xterm*faceName: Monospace
+xterm*faceSize: 11
+xterm*loginShell: true
+xterm*vt100*geometry: 100x30
+xterm*saveLines: 50000
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*termName: xterm-color
+xterm*eightBitInput: false
+xterm*foreground: rgb:f9/f9/f9
+xterm*background: rgb:22/22/22
+xterm*color0: rgb:3f/3f/3f
+xterm*color1: rgb:cc/00/00
+xterm*color2: rgb:4e/9a/06
+xterm*color3: rgb:c4/a0/00
+xterm*color4: rgb:34/65/a4
+xterm*color5: rgb:75/50/7b
+xterm*color6: rgb:06/98/9a
+xterm*color7: rgb:dc/dc/cc
+xterm*color8: rgb:54/54/54
+xterm*color9: rgb:fc/54/54
+xterm*color10: rgb:8a/e2/34
+xterm*color11: rgb:fc/e9/4f
+xterm*color12: rgb:94/bf/f3
+xterm*color13: rgb:ad/7f/a8
+xterm*color14: rgb:93/e0/e3
+xterm*color15: rgb:ff/ff/ff
+xterm*boldMode: false
+xterm*colorBDMode: true
+xterm*colorBD: rgb:ff/ff/ff
 
 
 
@@ -139,20 +150,18 @@ URxvt*keysym.Control-Shift-V: perl:clipboard:paste
 ! UXTerm standard arcolinux theme
 ! ------------------------------------------------------------------------------
 
-
-
 ! termtype
 UXTerm*termName: xterm-256color
 
 
-UXTerm*cursorColor:        white
-UXTerm*VT100.geometry:     90x30
+UXTerm*cursorColor:        #c8c8c8
+UXTerm*VT100.geometry:     100x30
 UXTerm*font:               Monospace
-UXTerm*faceSize:		   12
+UXTerm*faceSize:		   11
 UXTerm*dynamicColors:      true
 UXTerm*utf8:               2
 UXTerm*eightBitInput:      true
-UXTerm*saveLines:          10000
+UXTerm*saveLines:          50000
 UXTerm*scrollKey:          true
 UXTerm*scrollTtyOutput:    false
 UXTerm*scrollBar:          false
@@ -164,22 +173,23 @@ UXTerm*toolBar:            false
 ! fix colors
 UXTerm*background: rgb:63/63/63
 UXTerm*foreground: rgb:00/00/00
-UXTerm*color0: rgb:00/00/00
-UXTerm*color1: rgb:a8/00/00
-UXTerm*color2: rgb:00/a8/00
-UXTerm*color3: rgb:a8/54/00
-UXTerm*color4: rgb:00/00/a8
-UXTerm*color5: rgb:a8/00/a8
-UXTerm*color6: rgb:00/a8/a8
-UXTerm*color7: rgb:a8/a8/a8
+UXTerm*color0: rgb:3f/3f/3f
+UXTerm*color1: rgb:cc/00/00
+UXTerm*color2: rgb:4e/9a/06
+UXTerm*color3: rgb:c4/a0/00
+UXTerm*color4: rgb:34/65/a4
+UXTerm*color5: rgb:75/50/7b
+UXTerm*color6: rgb:06/98/9a
+UXTerm*color7: rgb:dc/dc/cc
 UXTerm*color8: rgb:54/54/54
 UXTerm*color9: rgb:fc/54/54
-UXTerm*color10: rgb:54/fc/54
-UXTerm*color11: rgb:fc/fc/54
-UXTerm*color12: rgb:54/54/fc
-UXTerm*color13: rgb:fc/54/fc
-UXTerm*color14: rgb:54/fc/fc
-UXTerm*color15: rgb:fc/fc/fc
+UXTerm*color10: rgb:8a/e2/34
+UXTerm*color11: rgb:fc/e9/4f
+UXTerm*color12: rgb:94/bf/f3
+UXTerm*color13: rgb:ad/7f/a8
+UXTerm*color14: rgb:93/e0/e3
+UXTerm*color15: rgb:ff/ff/ff
+
 UXTerm*boldMode: false
 UXTerm*colorBDMode: true
-UXTerm*colorBD: rgb:3f/3f/3f
+UXTerm*colorBD: rgb:ff/ff/ff
