@@ -23,15 +23,9 @@ URxvt*geometry: 		100x30
 URxvt*depth:             32
 !URxvt*transparent:      true
 URxvt*shading:           80
-!URxvt*background:       rgba:2222/2222/2222/AAAA
-!URxvt*background:       [80]#404552
-!URxvt*background:       [70]#3F424A
-URxvt*background:        [80]#222222
-URxvt*foreground:        #F9F9F9
 URxvt*underlineColor:    #4682B4
 URxvt*highlightColor:    #666666
 URxvt*throughColor:      #4682B4
-URxvt*cursorColor:       #c8c8c8
 URxvt*scrollBar:         false
 URxvt*scrollTtyOutput:   false
 URxvt*scrollWithBuffer:  true
@@ -42,24 +36,59 @@ URxvt*colorIT:      	 #4682B4
 URxvt*colorBD:      	 #F9F9F9
 URxvt*colorUL:      	 #87afd7
 
+!!! get your color schemes from here
+!!! https://terminal.sexy/
+!!! copy/paste colorcodes in
+!!! begin
 
-! colors
-URxvt*color0: #3f3f3f
-URxvt*color1: #cc0000
-URxvt*color2: #4e9a06
-URxvt*color3: #c4a000
-URxvt*color4: #3465a4
-URxvt*color5: #ad6ab8
-URxvt*color6: #06989a
-URxvt*color7: #dcdccc
-URxvt*color8: #545454
-URxvt*color9: #fc5454
-URxvt*color10: #8ae234
-URxvt*color11: #fce94f
-URxvt*color12: #94bff3
-URxvt*color13: #dc95e8
-URxvt*color14: #93e0e3
-URxvt*color15: #ffffff
+! special
+*.foreground:   #F9F9F9
+
+*.background:   [80]#222222
+!*background:	#000000
+!*background:   rgba:2222/2222/2222/AAAA
+!*background:   [80]#404552
+!*background:   [70]#3F424A
+
+*.cursorColor:  #c8c8c8
+
+! black
+*.color0:       #3f3f3f
+*.color8:       #545454
+
+! red
+*.color1:       #cc0000
+*.color9:       #fc5454
+
+! green
+*.color2:       #4e9a06
+*.color10:      #8ae234
+
+! yellow
+*.color3:       #c4a000
+*.color11:      #fce94f
+
+! blue
+*.color4:       #3465a4
+*.color12:      #94bff3
+
+! magenta
+*.color5:       #85678f
+*.color13:      #b294bb
+
+! cyan
+*.color6:       #06989a
+*.color14:      #93e0e3
+
+! white
+*.color7:       #dcdccc
+*.color15:      #ffffff
+
+
+!!! end
+!!! get your color schemes from here
+!!! https://terminal.sexy/
+!!! copy/paste colorcodes in
 
 ! fonts
 URxvt*letterSpace: 	    		-1
