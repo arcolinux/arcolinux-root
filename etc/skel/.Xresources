@@ -44,11 +44,11 @@ URxvt*colorUL:      	 #87afd7
 ! special
 *.foreground:   #F9F9F9
 
-*.background:   [80]#222222
-!*background:	#000000
-!*background:   rgba:2222/2222/2222/AAAA
-!*background:   [80]#404552
-!*background:   [70]#3F424A
+URxvt*background:   [80]#222222
+!URxvt*background:	#000000
+!URxvt*background:  rgba:2222/2222/2222/AAAA
+!URxvt*background:  [80]#404552
+!URxvt*background:  [70]#3F424A
 
 *.cursorColor:  #c8c8c8
 
