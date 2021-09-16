@@ -201,7 +201,7 @@ UXTerm*toolBar:            false
 
 ! fix colors
 UXTerm*background: rgb:63/63/63
-UXTerm*foreground: rgb:00/00/00
+UXTerm*foreground: rgb:f9/f9/f9
 UXTerm*color0: rgb:3f/3f/3f
 UXTerm*color1: rgb:cc/00/00
 UXTerm*color2: rgb:4e/9a/06
