@@ -284,19 +284,23 @@ alias personal='cp -Rf /personal/* ~'
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
 # reporting tools - install when not installed
-# install neofetch
 neofetch
-# install screenfetch
+#neofetch | lolcat
 #screenfetch
-# install ufetch-git
+#screenfetch | lolcat
 #ufetch
-# install ufetch-arco-git
+#ufetch | lolcat
 #ufetch-arco
-# install arcolinux-paleofetch-git
+#ufetch-arco
 #paleofetch
-# install alsi
+#paleofetch | lolcat
 #alsi
-# install arcolinux-bin-git - standard on ArcoLinux isos (or sfetch - smaller)
+#alsi | lolcat
 #hfetch
-# install lolcat
+#hfetch | lolcat
+#sfetch
 #sfetch | lolcat
+#sysinfo
+#sysinfo | lolcat
+#sysinfo-retro
+#sysinfo-retro | lolcat
