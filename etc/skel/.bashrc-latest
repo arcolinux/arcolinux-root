@@ -285,22 +285,12 @@ alias personal='cp -Rf /personal/* ~'
 
 # reporting tools - install when not installed
 neofetch
-#neofetch | lolcat
 #screenfetch
-#screenfetch | lolcat
 #ufetch
-#ufetch | lolcat
-#ufetch-arco
 #ufetch-arco
 #paleofetch
-#paleofetch | lolcat
 #alsi
-#alsi | lolcat
 #hfetch
-#hfetch | lolcat
 #sfetch
-#sfetch | lolcat
 #sysinfo
-#sysinfo | lolcat
 #sysinfo-retro
-#sysinfo-retro | lolcat
