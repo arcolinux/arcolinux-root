@@ -116,8 +116,11 @@ alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
 alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now'"
 
-#quickly kill conkies
+# kill commands
+# quickly kill conkies
 alias kc='killall conky'
+# quickly kill polybar
+alias kp='killall polybar'
 
 #hardware info --short
 alias hw="hwinfo --short"
