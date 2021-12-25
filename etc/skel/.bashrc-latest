@@ -35,7 +35,7 @@ bind "set completion-ignore-case on"
 #list
 alias ls='ls --color=auto'
 alias la='ls -a'
-alias ll='ls -la'
+alias ll='ls -alFh'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
 
