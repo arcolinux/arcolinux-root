@@ -107,7 +107,7 @@ alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
 #copy shell configs
 alias cb='sudo cp /etc/skel/.bashrc ~/.bashrc && exec bash'
 alias cz='sudo cp /etc/skel/.zshrc ~/.zshrc && echo "Copied."'
-alias cf 'cp /etc/skel/.config/fish/config.fish ~/.config/fish/config.fish && echo "Copied."'
+alias cf='cp /etc/skel/.config/fish/config.fish ~/.config/fish/config.fish && echo "Copied."'
 
 #switch between bash and zsh
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
