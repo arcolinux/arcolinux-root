@@ -284,6 +284,15 @@ ex ()
   fi
 }
 
+#btrfs aliases
+alias btrfsfs="sudo btrfs filesystem df /"
+alias btrfsli="sudo btrfs su li / -t"
+
+#snapper aliases
+alias snapcroot="sudo snapper -c root create-config /"
+alias snapchome="sudo snapper -c home create-config /home"
+alias snapli="sudo snapper list"
+
 #Leftwm aliases
 alias lti="leftwm-theme install"
 alias ltu="leftwm-theme uninstall"
