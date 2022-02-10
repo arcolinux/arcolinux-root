@@ -292,6 +292,8 @@ alias btrfsli="sudo btrfs su li / -t"
 alias snapcroot="sudo snapper -c root create-config /"
 alias snapchome="sudo snapper -c home create-config /home"
 alias snapli="sudo snapper list"
+alias snapcr="sudo snapper -c root create"
+alias snapch="sudo snapper -c home create"
 
 #Leftwm aliases
 alias lti="leftwm-theme install"
