@@ -103,8 +103,6 @@ alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 #add new fonts
 alias update-fc='sudo fc-cache -fv'
 
-#copy/paste all content of /etc/skel over to home folder - backup of config created - beware
-alias skel="[ -d ~/.config ] || confirm 'Do you really want to update arcolinux application configurations? (Y/n)' && mkdir ~/.config && cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -rf /etc/skel/* ~"
 #backup contents of /etc/skel to hidden backup folder in home/user
 alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
 
@@ -158,8 +156,8 @@ alias rams='rate-mirrors --allow-root --protocol https arch  | sudo tee /etc/pac
 alias vbm="confirm 'mount vbox share? (Y/n)' && sudo /usr/local/bin/arcolinux-vbox-share"
 
 #enabling vmware services
-alias start-vmware="sudo systemctl enable --now vmtoolsd.service"
-alias sv="sudo systemctl enable --now vmtoolsd.service"
+alias enable-vmwaretools="confirm 'Do you want to automatically start VMware Tools? (Y/n)' && sudo systemctl enable --now vmtoolsd.service"
+alias disable-vmwaretools="confirm 'Do you want to remove VMware Tools from autostart? (Y/n)' && sudo systemctl disable --now vmtoolsd.service"
 
 #shopt
 shopt -s autocd # change to named directory
@@ -316,7 +314,8 @@ alias personal='cp -Rf /personal/* ~'
 
 # Bash Scripts Section
 # # Confirmation Script accepting a query argument
-confirm() {
+confirm() 
+{
     # call with a prompt string or use a default ie confirm "prompt" && action here
     read -r -p "${1:-Are you sure? [y/N]} " response
     case "$response" in
@@ -354,6 +353,22 @@ ex ()
     esac
   else
     echo "'$1' is not a valid file"
+  fi
+}
+
+# # Skel is now a bash script
+# # copy/paste all content of /etc/skel over to home folder - backup of config created - beware
+skel() 
+{
+  timestamp=$(date +%Y.%m.%d-%H.%M.%S)
+  if [ ! -d ~/.config ]; then
+    mkdir ~/.config
+  fi
+  if confirm 'Do you really want to update arcolinux application configurations? (Y/n) '; then
+    cp -Rf ~/.config ~/.config-backup-$timestamp
+    echo "Backup of ~/.config created at ~/.config-backup-$timestamp"
+    cp -rf /etc/skel/* ~
+    echo "Successfully updated configurations from /etc/skel"
   fi
 }
 
