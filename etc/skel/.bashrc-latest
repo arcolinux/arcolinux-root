@@ -59,6 +59,9 @@ alias df='df -h'
 alias give-me-azerty-be="sudo localectl set-x11-keymap be"
 alias give-me-qwerty-us="sudo localectl set-x11-keymap us"
 
+#setlocale
+alias setlocale="sudo localectl set-locale LANG=en_US.UTF-8"
+
 #pacman unlock
 alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"
