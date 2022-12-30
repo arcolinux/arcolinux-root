@@ -208,7 +208,7 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
 # This will generate a list of explicitly installed packages
 alias list="sudo pacman -Qqe"
-This will generate a list of explicitly installed packages without dependencies
+#This will generate a list of explicitly installed packages without dependencies
 alias listt="sudo pacman -Qqet"
 # list of AUR packages
 alias listaur="sudo pacman -Qqem"
