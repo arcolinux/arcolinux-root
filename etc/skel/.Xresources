@@ -21,7 +21,7 @@ URxvt.underlineURLs:    true
 URxvt.urlButton:        1
 
 ! appearance
-URxvt.geometry: 		100x30
+URxvt.geometry: 		 400x400
 URxvt.depth:             32
 !URxvt.transparent:      true
 URxvt.shading:           80
