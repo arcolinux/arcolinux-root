@@ -265,6 +265,8 @@ alias nneofetch="$EDITOR ~/.config/neofetch/config.conf"
 alias nplymouth="sudo $EDITOR /etc/plymouth/plymouthd.conf"
 alias nvconsole="sudo $EDITOR /etc/vconsole.conf"
 alias nenvironment="sudo $EDITOR /etc/environment"
+alias nloader="sudo $EDITOR /boot/efi/loader/loader.conf"
+
 
 #reading logs with bat
 alias lcalamares="bat /var/log/Calamares.log"
@@ -321,6 +323,7 @@ alias xd="ls /usr/share/xsessions"
 alias xdw="ls /usr/share/wayland-sessions"
 
 #give a list of the kernels installed
+alias kernel="ls /usr/lib/modules"
 alias kernels="ls /usr/lib/modules"
 
 #am I on grub or systemd-boot
