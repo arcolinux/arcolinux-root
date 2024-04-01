@@ -273,7 +273,7 @@ alias nplymouth="sudo $EDITOR /etc/plymouth/plymouthd.conf"
 alias nvconsole="sudo $EDITOR /etc/vconsole.conf"
 alias nenvironment="sudo $EDITOR /etc/environment"
 alias nloader="sudo $EDITOR /boot/efi/loader/loader.conf"
-
+alias nrefind="sudo $EDITOR /boot/refind_linux.conf"
 
 #reading logs with bat
 alias lcalamares="bat /var/log/Calamares.log"
