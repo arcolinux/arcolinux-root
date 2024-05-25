@@ -43,9 +43,6 @@ URxvt.colorUL:      	 #87afd7
 !!! copy/paste colorcodes in
 !!! begin
 
-! special
-*.foreground:   #F9F9F9
-
 URxvt.foreground:   #F9F9F9
 URxvt.background:   [80]#222222
 !URxvt.background:	#000000
